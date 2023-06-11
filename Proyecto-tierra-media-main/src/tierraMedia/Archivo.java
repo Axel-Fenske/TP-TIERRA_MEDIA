@@ -26,8 +26,8 @@ public class Archivo {
             scanner.useLocale(Locale.ENGLISH);
             while (scanner.hasNextLine()) {
                 listaDeUsuarios.add(new Usuario(scanner.next().replace('-', ' '),
-                        TipoDeAtraccion.valueOf(scanner.next().toUpperCase()), scanner.nextInt(),
-                        scanner.nextDouble()));
+                        TipoDeAtraccion.valueOf(scanner.next().toUpperCase()), scanner.nextDouble(),
+                        scanner.nextInt()));
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -6,11 +6,11 @@ import java.util.LinkedList;
 public class Usuario {
 	private final String nombre;
 	final TipoDeAtraccion preferencia;
-	private int tiempoDisponible;
-	private double dineroDisponible;
+	private double tiempoDisponible;
+	private int dineroDisponible;
 	private List<Oferta> itinerario;
 
-	public Usuario(String nombre, TipoDeAtraccion preferencia, int tiempoDisponible, double dineroDisponible) {
+	public Usuario(String nombre, TipoDeAtraccion preferencia, double tiempoDisponible, int dineroDisponible) {
 		this.nombre = nombre;
 		this.preferencia = preferencia;
 		this.tiempoDisponible = tiempoDisponible;
@@ -31,11 +31,11 @@ public class Usuario {
 		return preferencia;
 	}
 
-	public int getTiempoDisponible() {
+	public double getTiempoDisponible() {
 		return tiempoDisponible;
 	}
 
-	public double getDineroDisponible() {
+	public int getDineroDisponible() {
 		return dineroDisponible;
 	}
 

@@ -4,7 +4,7 @@ import java.util.*;
 
 import Excepciones.GeneradorDeSugerenciasException;
 
-public class GeneradorDeSegurencias { ////SEGURENCIAS????
+public class GeneradorDeSegurencias { 
 	private List<Oferta> listaDeOfertas;
 	private List<Usuario> listaDeUsuarios;
 
