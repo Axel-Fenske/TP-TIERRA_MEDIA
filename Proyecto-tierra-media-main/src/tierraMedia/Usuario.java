@@ -87,4 +87,13 @@ public class Usuario {
 	public void ordenarItenerario(OfertaComparator ofertaComparator) {
 		this.itinerario.sort(ofertaComparator);
 	}
+
+	public List<Oferta> getItinerario() {
+		return itinerario;
+	}
+
+	public int tamanioItinerario() {
+		return this.itinerario.size();
+		
+	}
 }

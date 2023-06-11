@@ -1,11 +1,11 @@
 package Excepciones;
 
-public class AtraccionException extends RuntimeException {
+public class PromocionesException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 	private String mensaje;
 	
-	public AtraccionException(String mensaje) {
+	public PromocionesException(String mensaje) {
 		this.mensaje = mensaje;
 	}
 	

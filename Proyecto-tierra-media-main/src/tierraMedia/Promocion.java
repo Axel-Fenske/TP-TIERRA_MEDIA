@@ -18,7 +18,7 @@ public abstract class Promocion extends Oferta {
 		this.tipo = calcularTipoDeAtraccion();
 	}
 
-	protected abstract int calcularCosto();
+	public abstract int calcularCosto();
 
 	@Override
 	public boolean esPromo() {

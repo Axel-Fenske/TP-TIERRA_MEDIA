@@ -8,7 +8,7 @@ public class PromocionAbsoluta extends Promocion {
 		super(atracciones, precioADescontar);
 	}
 
-	protected int calcularCosto() {
+	public int calcularCosto() {
 		return this.costoOriginal - this.valor;
 	}
 

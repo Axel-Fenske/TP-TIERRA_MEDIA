@@ -69,4 +69,8 @@ public class Atraccion extends Oferta {
         Atraccion other = (Atraccion) obj;
         return this.nombre.equals(other.nombre);
     }
+
+	public int getCupo() {
+		return cupo;
+	}
 }

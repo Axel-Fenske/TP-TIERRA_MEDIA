@@ -8,7 +8,7 @@ public class PromocionAXB extends Promocion {
 		super(atracciones, lugarADescontar);
 	}
 
-	protected int calcularCosto() {
+	public int calcularCosto() {
 		if (this.valor < 1 || this.valor > this.atracciones.size()) {
 			throw new RuntimeException("el valor no puede ser negativo");
 		}

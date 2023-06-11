@@ -8,7 +8,7 @@ public class PromocionPorcentual extends Promocion {
 		super(atracciones, porcentaje);
 	}
 
-	protected int calcularCosto() {
+	public int calcularCosto() {
 		return this.costoOriginal - this.costoOriginal * this.valor / 100;
 	}
 
