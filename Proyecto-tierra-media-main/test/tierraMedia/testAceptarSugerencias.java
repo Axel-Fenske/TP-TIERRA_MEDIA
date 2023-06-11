@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import Excepciones.GeneradorDeSugerenciasException;
+
 public class testAceptarSugerencias {
 
 	@Test
