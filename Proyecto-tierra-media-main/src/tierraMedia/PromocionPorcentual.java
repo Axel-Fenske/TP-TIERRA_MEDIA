@@ -2,6 +2,8 @@ package tierraMedia;
 
 import java.util.List;
 
+import Excepciones.PromocionesException;
+
 public class PromocionPorcentual extends Promocion {
 
 	public PromocionPorcentual(List<Atraccion> atracciones, int porcentaje) {
@@ -9,6 +11,9 @@ public class PromocionPorcentual extends Promocion {
 	}
 
 	public int calcularCosto() {
+		if(this.valor>=100 || this.valor<=1) {
+			throw new PromocionesException("el porcentaje no puede ser mayor al 99% o menor al 1%");
+		}
 		return this.costoOriginal - this.costoOriginal * this.valor / 100;
 	}
 
