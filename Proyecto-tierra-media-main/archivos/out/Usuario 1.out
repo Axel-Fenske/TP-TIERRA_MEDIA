@@ -5,6 +5,11 @@ Nombre: [Atraccion 1]
 -Precio: $2
 -Duracion: 10.0 horas
 
-Tiempo de duracion total: 10.0 horas
-Precio total a pagar: $2
+Atraccion
+Nombre: [Atraccion 2]
+-Precio: $2
+-Duracion: 10.0 horas
+
+Tiempo de duracion total: 20.0 horas
+Precio total a pagar: $4
 
