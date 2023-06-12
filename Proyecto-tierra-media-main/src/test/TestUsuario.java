@@ -26,7 +26,7 @@ public class TestUsuario {
 
 	@Test
 	public void testGetTiempoDisponible() {
-		assertEquals(10, usuario.getTiempoDisponible());
+		assertEquals(10, usuario.getTiempoDisponible(),0.01);
 	}
 
 	@Test
@@ -59,7 +59,7 @@ public class TestUsuario {
 	public void testReducirTiempo() {
 		usuario.reducirTiempo(5);
 
-		assertEquals(5, usuario.getTiempoDisponible());
+		assertEquals(5, usuario.getTiempoDisponible(),0.001);
 	}
 
 	@Test
@@ -81,24 +81,24 @@ public class TestUsuario {
 	@Test
 	public void testOrdenarItinerario() {
 
-		Usuario usuario = new Usuario("Usuario 1", TipoDeAtraccion.AVENTURA, 10, 20);
+		Usuario usuarioTest = new Usuario("Usuario 1", TipoDeAtraccion.AVENTURA, 10, 20);
 
 		Oferta oferta1 = new Atraccion("Atraccion 1", 2, 10, 5, TipoDeAtraccion.AVENTURA);
 		Oferta oferta2 = new Atraccion("Atraccion 2", 3, 15, 8, TipoDeAtraccion.AVENTURA);
 		Oferta oferta3 = new Atraccion("Atraccion 3", 1, 5, 3, TipoDeAtraccion.PAISAJE);
 
-		usuario.agregarAItinerario(oferta3);
-		usuario.agregarAItinerario(oferta1);
-		usuario.agregarAItinerario(oferta2);
+		usuarioTest.agregarAItinerario(oferta3);
+		usuarioTest.agregarAItinerario(oferta1);
+		usuarioTest.agregarAItinerario(oferta2);
 
-		List<Oferta> salidaEsperada = new ArrayList<Oferta>();
+		List<Oferta> salidaEsperada = new ArrayList<>();
 		salidaEsperada.add(oferta2);
 		salidaEsperada.add(oferta1);
 		salidaEsperada.add(oferta3);
 
-		usuario.ordenarItenerario(new OfertaComparator(usuario.getPreferencia()));
+		usuarioTest.ordenarItenerario(new OfertaComparator(usuarioTest.getPreferencia()));
 
-		assertEquals(salidaEsperada, usuario.getItinerario());
+		assertEquals(salidaEsperada, usuarioTest.getItinerario());
 
 	}
 
