@@ -94,6 +94,6 @@ public class Usuario {
 
 	public int tamanioItinerario() {
 		return this.itinerario.size();
-		
+
 	}
 }

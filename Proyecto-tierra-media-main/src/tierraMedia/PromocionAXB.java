@@ -11,22 +11,17 @@ public class PromocionAXB extends Promocion {
 	}
 
 	public int calcularCosto() {
-		if (this.valor < 1 ) {
+		if (this.valor < 1) {
 			throw new PromocionesException("el valor no puede ser negativo");
 		}
-		if( this.valor > this.atracciones.size()-1) {
+		if (this.valor > this.atracciones.size() - 1) {
 			throw new PromocionesException("el valor no la cantidad maxima de atracciones o mayor");
 		}
-		//se descuentan los N (lugaresADescontar) ultimos lugares
 		int costoADescontar = 0;
-		
-		for (int i = this.atracciones.size()- valor; i <this.atracciones.size() ; i++) {
-			costoADescontar+=atracciones.get(i).getCosto();
+
+		for (int i = this.atracciones.size() - valor; i < this.atracciones.size(); i++) {
+			costoADescontar += atracciones.get(i).getCosto();
 		}
-//		for (Atraccion a : this.atracciones) {
-//			costoADescontar += a.getCosto();
-//		}
-//		Oferta a = this.atracciones.get(this.valor - 1);
 		return this.costoOriginal - costoADescontar;
 	}
 
@@ -45,6 +40,5 @@ public class PromocionAXB extends Promocion {
 			return false;
 		return true;
 	}
-
 
 }

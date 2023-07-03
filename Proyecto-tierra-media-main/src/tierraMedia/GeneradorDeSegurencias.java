@@ -4,22 +4,22 @@ import java.util.*;
 
 import Excepciones.GeneradorDeSugerenciasException;
 
-public class GeneradorDeSegurencias { 
+public class GeneradorDeSegurencias {
 	private List<Oferta> listaDeOfertas;
 	private List<Usuario> listaDeUsuarios;
 
 	public GeneradorDeSegurencias(List<Oferta> listaDeOfertas, List<Usuario> listaDeUsuarios) {
 
-		if(listaDeOfertas.isEmpty() || listaDeUsuarios.isEmpty()) {
+		if (listaDeOfertas.isEmpty() || listaDeUsuarios.isEmpty()) {
 			throw new GeneradorDeSugerenciasException("Las listas no pueden estar vacias");
 		}
-		
+
 		this.listaDeUsuarios = listaDeUsuarios;
 		this.listaDeOfertas = listaDeOfertas;
 	}
 
 	public void generarSugerencias() {
-		
+
 		HashSet<Oferta> ofertasYaSugeridas = new HashSet<>();
 		Scanner sc = new Scanner(System.in);
 		boolean tieneDineroYTiempo = true;

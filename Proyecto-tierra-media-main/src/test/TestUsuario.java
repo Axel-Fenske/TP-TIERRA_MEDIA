@@ -26,7 +26,7 @@ public class TestUsuario {
 
 	@Test
 	public void testGetTiempoDisponible() {
-		assertEquals(10, usuario.getTiempoDisponible(),0.01);
+		assertEquals(10, usuario.getTiempoDisponible(), 0.01);
 	}
 
 	@Test
@@ -59,7 +59,7 @@ public class TestUsuario {
 	public void testReducirTiempo() {
 		usuario.reducirTiempo(5);
 
-		assertEquals(5, usuario.getTiempoDisponible(),0.001);
+		assertEquals(5, usuario.getTiempoDisponible(), 0.001);
 	}
 
 	@Test

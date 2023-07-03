@@ -1,5 +1,5 @@
 package tierraMedia;
 
 public enum TipoDeAtraccion {
-    AVENTURA, DEGUSTACION, PAISAJE;
+	AVENTURA, DEGUSTACION, PAISAJE;
 }

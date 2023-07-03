@@ -11,7 +11,7 @@ public class PromocionPorcentual extends Promocion {
 	}
 
 	public int calcularCosto() {
-		if(this.valor>=100 || this.valor<=1) {
+		if (this.valor >= 100 || this.valor <= 1) {
 			throw new PromocionesException("el porcentaje no puede ser mayor al 99% o menor al 1%");
 		}
 		return this.costoOriginal - this.costoOriginal * this.valor / 100;

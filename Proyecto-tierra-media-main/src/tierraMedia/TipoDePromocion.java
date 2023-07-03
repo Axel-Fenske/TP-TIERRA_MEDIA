@@ -1,5 +1,5 @@
 package tierraMedia;
 
 public enum TipoDePromocion {
-    PER, AXB, ABS;
+	PER, AXB, ABS;
 }
